@@ -21,7 +21,15 @@ func main() {
 		},
 	}
 	app.Copyright = "(c) 2016 Chris Fordham"
-	app.Usage = "A tool to look at your source tree and advise on any lack of committment"
+	app.Usage = "A tool to look at your source tree and advise on any lack of commitment"
+
+	app.Flags = []cli.Flag{
+		cli.BoolFlag{
+			Name:  "prompt, p",
+			Usage: "prompt",
+		},
+	}
+
 	app.Action = func(c *cli.Context) error {
 		if c.NArg() < 1 {
 			fmt.Println("Usage: milieu [global options] <sourcetree_root>")
@@ -29,7 +37,7 @@ func main() {
 		}
 		location := c.Args().Get(0)
 
-		walk.Walk(location)
+		walk.Walk(location, c.Bool("prompt"))
 
 		return nil
 	}
