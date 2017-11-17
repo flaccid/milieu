@@ -5,6 +5,10 @@ A tool to look at your source tree and advise on any lack of commitment.
 
     $ go run milieu.go ~/src
 
+Pause and prompt when you have not committed:
+
+    $ go run milieu.go --prompt ~/src
+
 License and Authors
 -------------------
 - Author: Chris Fordham (<chris@fordham-nagy.id.au>)
