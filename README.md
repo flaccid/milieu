@@ -3,7 +3,7 @@ A tool to look at your source tree and advise on any lack of commitment.
 
 ## Usage
 
-    $ go run main.go ~/src
+    $ go run milieu.go ~/src
 
 License and Authors
 -------------------
