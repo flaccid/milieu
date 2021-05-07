@@ -14,8 +14,8 @@ func main() {
 	app.Name = "milieu"
 	app.Version = "v0.0.1"
 	app.Compiled = time.Now()
-	app.Authors = []cli.Author{
-		cli.Author{
+	app.Authors = []*cli.Author{
+		&cli.Author{
 			Name:  "Chris Fordham",
 			Email: "chris@fordham-nagy.id.au",
 		},
@@ -24,7 +24,7 @@ func main() {
 	app.Usage = "A tool to look at your source tree and advise on any lack of commitment"
 
 	app.Flags = []cli.Flag{
-		cli.BoolFlag{
+		&cli.BoolFlag{
 			Name:  "prompt, p",
 			Usage: "prompt",
 		},
