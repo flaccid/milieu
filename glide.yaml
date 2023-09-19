@@ -1,3 +1,0 @@
-package: github.com/flaccid/milieu
-import:
-- package: github.com/urfave/cli

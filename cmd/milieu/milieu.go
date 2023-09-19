@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/flaccid/milieu/walk"
+	"github.com/flaccid/milieu"
 	"github.com/urfave/cli"
 )
 

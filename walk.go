@@ -53,7 +53,7 @@ func Walk(location string, prompt bool) {
 					fmt.Println("(" + color.GreenString("ok") + ") " + filepath.Base(path))
 				} else {
 					modified++
-					fmt.Println("(" + color.YellowString("!m") + ") "+ color.CyanString(filepath.Base(path)) + "    " + path)
+					fmt.Println("(" + color.YellowString("!m") + ") " + color.CyanString(filepath.Base(path)) + "    " + path)
 					fmt.Println(string(cmdOut))
 					if prompt {
 						fmt.Print("Press 'Enter' to continue...")
