@@ -1,20 +1,27 @@
 # milieu
+
 A tool to look at your source tree and advise on any lack of commitment.
+
+## Installation
+
+```
+go install github.com/flaccid/milieu
+```
 
 ## Usage
 
-    $ go run milieu.go ~/src
+    $ milieu ~/src
 
 Pause and prompt when you have not committed:
 
-    $ go run milieu.go --prompt ~/src
+    $ milieu --prompt ~/src
 
 License and Authors
 -------------------
 - Author: Chris Fordham (<chris@fordham-nagy.id.au>)
 
 ```text
-Copyright 2017, Chris Fordham
+Copyright 2017-2023, Chris Fordham
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

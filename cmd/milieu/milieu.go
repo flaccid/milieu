@@ -36,7 +36,6 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "milieu"
 	app.Version = milieu.VERSION
-	app.Usage = "basic http server for static files"
 	app.Compiled = time.Now()
 	app.Copyright = "(c) 2016 Chris Fordham"
 	app.Usage = "A tool to look at your source tree and advise on any lack of commitment"
