@@ -5,7 +5,7 @@ A tool to look at your source tree and advise on any lack of commitment.
 ## Installation
 
 ```
-go install github.com/flaccid/milieu
+go install github.com/flaccid/milieu/cmd/milieu
 ```
 
 ## Usage
